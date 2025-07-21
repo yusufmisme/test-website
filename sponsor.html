@@ -9,7 +9,7 @@
   font-src https://fonts.gstatic.com;
   script-src 'self';
   ">
-  <title>{{ page.title }}</title>
+  <title>Outreach - Wolves Robotics</title>
   <link rel="icon" type="image/x-icon" href="images\logos\LOGO-removebg-previewwhite.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -26,25 +26,20 @@
             <span>Wolves Robotics</span>
           </a>
         </div>
-        About Us - High School Robotics Team
+        
         <!-- Desktop Navigation -->
         <nav class="desktop-nav">
-            <!-- ex: 
-            layout: default
-            title: About Us 
-            about: active -->
           <a href="index.html">Home</a>
-          <a href="about.html" class="{{ page.about }}">About</a>
-          <a href="archive.html" class="{{ page.archive }}">Archive</a>
-          <a href="outreach.html" class="{{ page.outreach }}">Outreach</a>
-          <a href="contact.html" class="{{ page.contact }}">Contact</a>
-          <div class="cta-buttons">
-          <a href="https://hcb.hackclub.com/donations/start/team-5189-wolves-robotics"  class="btn btn-white" style="color: #083b70;" >Donate</a>
-        </div>
+          <a href="about.html">About</a>
+          <a href="archive.html">Archive</a>
+          <a href="outreach.html" >Outreach</a>
+          <a href="contact.html">Contact</a>
+          <a href="sponsor.html" class="long active">Sponsorship</a>
+          <a href="https://hcb.hackclub.com/donations/start/team-5189-wolves-robotics"  class="btny" style="color: #083b70;" >Donate</a>
         </nav>
         
-       <!-- Mobile Menu Button -->
-       <button id="menuToggle" class="mobile-menu-btn" aria-label="Toggle menu">
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="mobile-menu-btn" aria-label="Toggle menu">
         <div class="waffle-icon">
           <span></span>
           <span></span>
@@ -53,25 +48,49 @@
       </button>
     </div>
   </div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="archive.html">Archive</a>
+      <a href="outreach.html" class="active">Outreach</a>
+      <a href="contact.html">Contact</a>
+      <a href="sponsor.html">Sponsorship</a>
+      <a href="https://hcb.hackclub.com/donations/start/team-5189-wolves-robotics"  class="btn btn-white" style="color: #083b70;" >Donate</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Sponsorships</h1>
+            <h2>page in development</h2>
+        </div>
+    </section>
+
+<section class="section">
   
-  <!-- Mobile Navigation -->
-  <nav id="mobileNav" class="mobile-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="archive.html">Archive</a>
-    <a href="outreach.html">Outreach</a>
-    <a href="contact.html">Contact</a>
-    <a href="https://hcb.hackclub.com/donations/start/team-5189-wolves-robotics"  class="btn btn-white" style="color: #083b70;" >Donate</a>
-  </nav>
-</header>
+      <div class="container-wide">
+        <div class="contact-cards">
+          <div class="contact-card">
+           
+          </div>
+          <div class="contact-card">
 
+         </div>   
+        <div class="contact-card">
+         
+        </div>
+         <div class="contact-card">
+         
+        </div>
+        </div>
+        </div>
+        </section>
 
+  </main>
 
- {{ content }}
-
-
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -137,6 +156,7 @@
       </div>
     </div>
   </footer>
+ 
 
   <script src="js/main.js"></script>
 </body>
