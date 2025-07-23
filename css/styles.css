@@ -26,6 +26,11 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 320px; 
+  overflow-x: hidden;
+
+
+
 }
 
 body {
@@ -55,6 +60,11 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.links {
+  color: var(--blue-500);
+  text-decoration: underline;
 }
 
 .container-wide {
@@ -197,22 +207,42 @@ ul {
   width: 19%;
   height:max-content;
   border-radius: 50%;
+  min-width: 75px;
 }
 
 .logo span {
   font-size: 1.25rem;
   font-weight: 700;
+  white-space: nowrap;
+  padding-right: 40px;
+
 }
 
 .desktop-nav {
   display: none;
+  white-space: nowrap;
+  padding-right: 5%;  
+  
 }
 
 .desktop-nav a {
   padding: 8px 24px;
+  
   color: var(--white);
   font-weight: 500;
   font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1090px) {
+  @media (min-width: 901px) {
+    .desktop-nav {
+      padding-left: 20px;
+    }
+    .desktop-nav a {
+      padding: 8px 9px;
+    }
+  }
 }
 
 .desktop-nav a:hover,
@@ -393,7 +423,7 @@ ul {
 }
 
 
-@media (min-width: 1029px) {
+@media (min-width: 900px) {
 
   .mobile-menu-btn {
 
@@ -500,17 +530,26 @@ ul {
   
 }
 
-@media (max-width: 1029px) { /* Adjust for mobile screens */
+@media (max-width: 900px) { /* Adjust for mobile screens */
   .hero-content {
     position: absolute;
     z-index: 2;
-    padding: 40% 20px;
+    padding: 150px 20px;
     top: 0;
+    height: var(--vh, 100vh);
+    overflow: hidden;
+
+  }
+
+  .hero-content h1 {
+    font-size: clamp(12px, 6vw, 32px);
+    white-space: nowrap;
   }
   .hero-image {
   position: absolute;
   inset: 0;
   z-index: 0;
+  
   
   }
   .hero-image img {
@@ -521,14 +560,23 @@ ul {
   }
   .logo img {
   width: 30%;
-  max-width: 200px;
+  max-width: 100px;
   height: 30%;
   border-radius: 50%;
   }
   
   .logo span {
-  font-size: 1.0rem;
+  /*font-size: 1.8rem;*/
+  font-size: clamp(12px, 6vw, 32px);
   font-weight: 700;
+  white-space: nowrap;
+  
+  
+
+}
+
+.footer-links {
+  display: none;
 }
 
 }
@@ -1383,7 +1431,7 @@ ul {
   }
 }
 
-@media (min-width: 1029px) {
+@media (min-width: 900px) {
   .section-header h2 {
     font-size: 3rem;
   }

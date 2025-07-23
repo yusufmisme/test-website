@@ -139,3 +139,13 @@ window.addEventListener('scroll', function() {
   document.documentElement.style.setProperty('--overlay-alpha', newAlpha.toFixed(2));
 
 });
+
+function setViewportHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setViewportHeight);
+window.addEventListener('orientationchange', setViewportHeight);
+setViewportHeight(); // call on page load
+
